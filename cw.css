@@ -1,0 +1,33 @@
+.col-md-12 {
+	margin-top: 25px;
+}
+.navbar-form {
+	padding: 0;
+}
+
+h2{
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}
+.item{
+    background: #333;
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+
+.search-query, .btn {
+	  border:1px solid #9E9E9E;
+    color: #000000;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: Verdana;
+    background: #FFF 
+}
