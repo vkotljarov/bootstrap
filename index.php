@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>VK Parser</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>VKParser</title>
+
+    <?php include_once "front_includes.php"; ?>
+
 </head>
 <body>
-    <ul class="nav nav-pills">
-        <li role="presentation" class="active"><a href="#">Group</a></li>
-        <li role="presentation"><a href="#">Person</a></li>
-        <li role="presentation"><a href="#">Music</a></li>
-    </ul>
-    <?php include_once "index_form.php"; ?>
+    <container>
+        <div class="col-md-12">
+            <ul class="nav nav-pills" role=tablist>
+                <li class="active"><a href="#">Groups</a></li>
+                <li><a href="#">Persons</a></li>
+                <li><a href="#">Music</a></li>
+            </ul>
+        </div>
+
+        <?php include_once "index_form.php"; ?>
+
+        <?php //include_once "carousel.php"; ?>
+
+
+    </container>
 </body>
 </html>
-<?php
-// index.php
-
