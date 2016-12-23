@@ -9,6 +9,7 @@ define('METHOD_URI', 'https://api.vk.com/method/');
 //groups to check
 define('MY_GAMES', 'm_gms');//132716344
 define('DIRTY_SELPHIE', 'selfaer');
+define("LEPRO", 65960786);
 
 
 

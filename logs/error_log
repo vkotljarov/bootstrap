@@ -128,3 +128,10 @@
 [Fri Dec 16 01:00:07.043600 2016] [:error] [pid 40721] [client 127.0.0.1:54118] PHP Notice:  Undefined index: src_xxxbig in /Users/bandydan/Sites/vkparser/wall_get.php on line 49, referer: http://vkparser/
 [Fri Dec 16 01:00:07.043644 2016] [:error] [pid 40721] [client 127.0.0.1:54118] PHP Notice:  Undefined index: src_xxxbig in /Users/bandydan/Sites/vkparser/wall_get.php on line 53, referer: http://vkparser/
 [Fri Dec 16 04:33:58.151002 2016] [:error] [pid 40719] [client 127.0.0.1:65011] PHP Notice:  Undefined index: group_id in /Users/bandydan/Sites/vkparser/wall_get.php on line 4, referer: http://vkparser/
+[Fri Dec 23 21:28:06.432267 2016] [:error] [pid 40722] [client 127.0.0.1:55374] PHP Notice:  Undefined index: photo in /Users/bandydan/Sites/vkparser/wall_get.php on line 60, referer: http://vkparser/?
+[Fri Dec 23 21:28:06.435586 2016] [:error] [pid 40722] [client 127.0.0.1:55374] PHP Notice:  Undefined index: photo in /Users/bandydan/Sites/vkparser/wall_get.php on line 60, referer: http://vkparser/?
+[Fri Dec 23 21:28:06.435623 2016] [:error] [pid 40722] [client 127.0.0.1:55374] PHP Notice:  Undefined index: photo in /Users/bandydan/Sites/vkparser/wall_get.php on line 60, referer: http://vkparser/?
+[Fri Dec 23 21:28:06.435661 2016] [:error] [pid 40722] [client 127.0.0.1:55374] PHP Notice:  Undefined index: photo in /Users/bandydan/Sites/vkparser/wall_get.php on line 60, referer: http://vkparser/?
+[Fri Dec 23 21:28:06.435722 2016] [:error] [pid 40722] [client 127.0.0.1:55374] PHP Notice:  Undefined index: photo in /Users/bandydan/Sites/vkparser/wall_get.php on line 60, referer: http://vkparser/?
+[Fri Dec 23 21:28:06.435747 2016] [:error] [pid 40722] [client 127.0.0.1:55374] PHP Notice:  Undefined index: photo in /Users/bandydan/Sites/vkparser/wall_get.php on line 60, referer: http://vkparser/?
+[Fri Dec 23 22:03:38.452175 2016] [:error] [pid 40747] [client 127.0.0.1:59629] PHP Fatal error:  Call to undefined function mysqli_conne\xd1\x81t() in /Users/bandydan/Sites/vkparser/save_photo.php on line 9, referer: http://vkparser/?
