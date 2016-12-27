@@ -6,7 +6,7 @@ function save_photo($photo_src) {
     $pawd = "dreamteam";
     $db = "vk";
 
-    $connection = mysqli_conneсt($host, $user, $pawd, $db);
+    $connection = mysqli_connect($host, $user, $pawd, $db);
 
     $query = "
         INSERT INTO
@@ -16,6 +16,7 @@ function save_photo($photo_src) {
             ) VALUES (
     ";
 
+    // var_dump($photo_src);exit;
     $new_arr = [];
     foreach ($photo_src as $key => $value) {
         $new_arr[] = strval($key) . ", " . $value;

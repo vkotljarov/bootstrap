@@ -1,5 +1,6 @@
 <?php
 
+// echo phpinfo();exit;
 include_once "const.php";
 
 if (isset($_POST['group_id']) && ! empty($_POST['group_id'])) {
@@ -42,27 +43,32 @@ if (isset($_POST['group_id']) && ! empty($_POST['group_id'])) {
 
 
     $result =json_decode(file_get_contents("test_data.json"), true);
+
+    // var_dump($result);exit;
     $photo_src = [];
 
     foreach ($result['response'] as $key => $value) {
         if($key > 0) {
-            foreach ($value['attachments'] as $index => $val) {
-                if (!empty($val['photo'])) {
-                    $src = '';
-                    if(!empty($val['photo']['src_xxxbig'])){
-                        $src = $val['photo']['src_xxxbig'];
-                    } elseif (!empty($val['photo']['src_xxbig'])) {
-                        $src = $val['photo']['src_xxbig'];
-                    } elseif (!empty($val['photo']['src_xbig'])) {
-                        $src = $val['photo']['src_xbig'];
-                    } elseif (!empty($val['photo']['src_big'])) {
-                        $src = $val['photo']['src_big'];
+            if (!empty($value['attachments'])) {
+                foreach ($value['attachments'] as $index => $val) {
+                    if (!empty($val['photo'])) {
+                        $src = '';
+                        if(!empty($val['photo']['src_xxxbig'])){
+                            $src = $val['photo']['src_xxxbig'];
+                        } elseif (!empty($val['photo']['src_xxbig'])) {
+                            $src = $val['photo']['src_xxbig'];
+                        } elseif (!empty($val['photo']['src_xbig'])) {
+                            $src = $val['photo']['src_xbig'];
+                        } elseif (!empty($val['photo']['src_big'])) {
+                            $src = $val['photo']['src_big'];
+                        }
+                        $photo_src[$val['photo']['pid']] = $src;
                     }
-                    $photo_src[$val['photo']['pid']] = $src;
                 }
             }
         }
     }
+    // var_dump($photo_src);exit;
 
     include_once "save_photo.php";
 
