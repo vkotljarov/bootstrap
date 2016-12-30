@@ -7,7 +7,7 @@ mb_internal_encoding("UTF-8");
 echo "Add group ID \n";
 $handle = fopen ("php://stdin","r");
 $ID = fgets($handle);
-
+/*dfg*/
 /*$fields = array(
 	'city',
 	'members_count',
