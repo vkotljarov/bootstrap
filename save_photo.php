@@ -9,21 +9,29 @@ function save_photo($photo_src) {
     $connection = mysqli_connect($host, $user, $pawd, $db);
 
     $query = "
-        INSERT INTO
-            photo (
-                id,
-                picture_url
-            ) VALUES (
-    ";
+        INSERT INTO photo (
+            id,
+            picture_url
+        ) VALUES (\"";
 
     // var_dump($photo_src);exit;
     $new_arr = [];
     foreach ($photo_src as $key => $value) {
-        $new_arr[] = strval($key) . ", " . $value;
+        $new_arr[] = strval($key) . "\", \"" . $value;
     }
-    $str = implode("), (", $new_arr);
+    $query = $query . implode("\"), (\"", $new_arr) . "\")";
 
-    var_dump($query . $str);exit;
+// var_dump($query);exit;
+    $result = mysqli_query($connection, $query);
+
+    if (false === $result) {
+      printf("error: %s\n", mysqli_error($connection));
+    }
+    else {
+      echo 'done.';
+    }
+
+    // var_dump($query);exit;
 
 }
     // 1, url1), (2, url2), ....
