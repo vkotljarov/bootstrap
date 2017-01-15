@@ -19,7 +19,7 @@ if (isset($_POST['group_id']) && ! empty($_POST['group_id'])) {
         'owner_id' => -1 * $_POST['group_id'],//for groups sign '-' is added
         'sort' => 'id_asc',
         'offset' => 0,
-        'count' => 30,
+        'count' => 10,
         'filter' => 'all',
         'fields' => '',//implode(',', $fields),
         'access_token' => ACCESS_TOKEN,

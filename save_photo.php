@@ -2,7 +2,7 @@
 
 function save_photo($photo_src) {
     $host = "127.0.0.1";
-    $user = "root";
+    $user = "root1";
     $pawd = "dreamteam";
     $db = "vk";
 
